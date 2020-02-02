@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cy.mappers.boardMapper">
+
+	<insert id="insert">
+		insert into tbl_test_board (board_num, board_title, board_content, board_writer)
+		values (seq_board_num.nextval, #{board_title}, #{board_content}, #{board_writer})
+	</insert>
+	
+	<select id="read" resultType="BoardVo">
+		select * from tbl_test_board where board_num = #{board_num}
+	</select>
+	
+	<update id="update">
+		update tbl_test_board set
+						board_title = #{board_title},
+						board_content = #{board_content}
+		where board_num = #{board_num}
+	</update>
+	
+	<delete id="delete">
+		delete from tbl_test_board where board_num = #{board_num}
+	</delete>
+	
+	<select id="listAll" resultType="BoardVo">
+		select * from tbl_test_board order by board_num desc
+	</select>
+
+</mapper>  
