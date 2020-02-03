@@ -12,6 +12,19 @@
 <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
 <!-- datepicker -->
 
+<style>
+.ui-datepicker-week-end {color:red;}
+.ui-datepicker-week-end .ui-state-default {color:red;}
+
+div#ui-datepicker-div { width: 250px; }
+
+.ui-datepicker-trigger{
+	width: 25px;
+}
+
+</style>
+
+
 <script>
 //datepicker START 
 $.datepicker.setDefaults({  
@@ -26,7 +39,7 @@ $.datepicker.setDefaults({
 	 changeMonth: true, 		 //콤보박스에서 월 선택 가능        
 	 
 	 showOn: "both", 			 //both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
-	 buttonImage: "images/calendar.PNG",
+	 buttonImage: "../resources/images/calendar.PNG",
 	 buttonImageOnly: true, 	 //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
 	 buttonText: "Select date",  //버튼에 마우스 갖다 댔을 때 표시되는 텍스트   
 	 
