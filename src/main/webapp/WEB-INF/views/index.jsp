@@ -22,8 +22,6 @@
     <link rel="stylesheet" type="text/css" href="resources/fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="resources/fonts/fontawesome/css/font-awesome.min.css">
 
-    
-
 
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">

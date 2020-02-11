@@ -12,6 +12,10 @@
 <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
 <!-- datepicker -->
 
+<!-- <script src="resources/js/bootstrap-datepicker.js"></script>  -->
+<!-- <script src="resources/js/jquery.timepicker.min.js"></script>  -->
+
+
 <style>
 .ui-datepicker-week-end {color:red;}
 .ui-datepicker-week-end .ui-state-default {color:red;}

@@ -37,7 +37,7 @@ public class BoardController {
 		return "/board/read";
 	}
 	
-	//글쓰기
+	//글쓰기 폼
 	@RequestMapping(value = "/write", method = RequestMethod.GET)
 	public void write() throws Exception{
 	}
